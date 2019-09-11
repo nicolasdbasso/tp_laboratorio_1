@@ -1,0 +1,212 @@
+20:45:03 **** Incremental Build of configuration Debug for project NicolasBasso_TP01 ****
+make all 
+Building file: ../src/calculos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/calculos.d" -MT"src/calculos.o" -o "src/calculos.o" "../src/calculos.c"
+../src/calculos.c: In function ‘getInt’:
+../src/calculos.c:11:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Por favor, indique el numero: ");
+  ^~~~~~
+../src/calculos.c:11:2: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/calculos.c:11:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/calculos.c:12:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%i",&num);
+  ^~~~~
+../src/calculos.c:12:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+../src/calculos.c:12:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/calculos.c: In function ‘multiplicacionDeDosInt’:
+../src/calculos.c:19:11: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,multiplicacion;
+           ^~~~
+../src/calculos.c:19:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,multiplicacion;
+      ^~~~
+../src/calculos.c: In function ‘divisionDeDosInt’:
+../src/calculos.c:29:12: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+            ^~~~
+../src/calculos.c:29:7: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+       ^~~~
+../src/calculos.c: In function ‘restaDeDosInt’:
+../src/calculos.c:42:11: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,resta;
+           ^~~~
+../src/calculos.c:42:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,resta;
+      ^~~~
+../src/calculos.c: In function ‘sumaDeDosInt’:
+../src/calculos.c:50:11: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,suma;
+           ^~~~
+../src/calculos.c:50:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1,num2,suma;
+      ^~~~
+Finished building: ../src/calculos.c
+ 
+Building target: NicolasBasso_TP01
+Invoking: GCC C Linker
+gcc  -o "NicolasBasso_TP01"  ./src/NicolasBasso_TP01.o ./src/calculos.o   
+Finished building target: NicolasBasso_TP01
+ 
+20:47:30 **** Incremental Build of configuration Debug for project NicolasBasso_TP01 ****
+make all 
+Building file: ../src/calculos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/calculos.d" -MT"src/calculos.o" -o "src/calculos.o" "../src/calculos.c"
+../src/calculos.c: In function ‘getInt’:
+../src/calculos.c:11:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Por favor, indique el numero: ");
+  ^~~~~~
+../src/calculos.c:11:2: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/calculos.c:11:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/calculos.c:12:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%i",&num);
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/calculos.o'
+  ^~~~~
+../src/calculos.c:12:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+../src/calculos.c:12:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/calculos.c: In function ‘multiplicacionDeDosInt’:
+../src/calculos.c:21:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+  int multiplicacion;
+  ^~~
+../src/calculos.c:23:2: error: ‘num2’ undeclared (first use in this function)
+  num2 = numero2;
+  ^~~~
+../src/calculos.c:23:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/calculos.c:19:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘divisionDeDosInt’:
+../src/calculos.c:31:12: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+            ^~~~
+../src/calculos.c:31:7: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+       ^~~~
+../src/calculos.c: In function ‘restaDeDosInt’:
+../src/calculos.c:45:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:44:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘sumaDeDosInt’:
+../src/calculos.c:55:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:54:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+make: *** [src/calculos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:04 **** Incremental Build of configuration Debug for project NicolasBasso_TP01 ****
+make all 
+Building file: ../src/calculos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/calculos.d" -MT"src/calculos.o" -o "src/calculos.o" "../src/calculos.c"
+../src/calculos.c: In function ‘getInt’:
+../src/calculos.c:11:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Por favor, indique el numero: ");
+  ^~~~~~
+../src/calculos.c:11:2: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/calculos.c:11:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/calculos.c:12:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%i",&num);
+  ^~~~~
+../src/calculos.c:12:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+../src/calculos.c:12:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/calculos.c: In function ‘multiplicacionDeDosInt’:
+../src/calculos.c:20:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:19:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘divisionDeDosInt’:
+../src/calculos.c:31:12: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+            ^~~~
+../src/calculos.c:31:7: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+   int num1,num2;
+       ^~~~
+../src/calculos.c: In function ‘restaDeDosInt’:
+../src/calculos.c:45:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:44:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘sumaDeDosInt’:
+../src/calculos.c:55:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:54:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+Finished building: ../src/calculos.c
+ 
+Building target: NicolasBasso_TP01
+Invoking: GCC C Linker
+gcc  -o "NicolasBasso_TP01"  ./src/NicolasBasso_TP01.o ./src/calculos.o   
+Finished building target: NicolasBasso_TP01
+ 
+20:49:15 **** Incremental Build of configuration Debug for project NicolasBasso_TP01 ****
+make all 
+Building file: ../src/NicolasBasso_TP01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NicolasBasso_TP01.d" -MT"src/NicolasBasso_TP01.o" -o "src/NicolasBasso_TP01.o" "../src/NicolasBasso_TP01.c"
+Finished building: ../src/NicolasBasso_TP01.c
+ 
+Building file: ../src/calculos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/calculos.d" -MT"src/calculos.o" -o "src/calculos.o" "../src/calculos.c"
+../src/calculos.c: In function ‘getInt’:
+../src/calculos.c:11:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Por favor, indique el numero: ");
+  ^~~~~~
+../src/calculos.c:11:2: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/calculos.c:11:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/calculos.c:12:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%i",&num);
+  ^~~~~
+../src/calculos.c:12:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+../src/calculos.c:12:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/calculos.c: In function ‘multiplicacionDeDosInt’:
+../src/calculos.c:20:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:19:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘divisionDeDosInt’:
+../src/calculos.c:32:7: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+   int num2;
+       ^~~~
+../src/calculos.c:31:7: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+   int num1;
+       ^~~~
+../src/calculos.c: In function ‘restaDeDosInt’:
+../src/calculos.c:46:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:45:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+../src/calculos.c: In function ‘sumaDeDosInt’:
+../src/calculos.c:56:6: warning: variable ‘num2’ set but not used [-Wunused-but-set-variable]
+  int num2;
+      ^~~~
+../src/calculos.c:55:6: warning: variable ‘num1’ set but not used [-Wunused-but-set-variable]
+  int num1;
+      ^~~~
+Finished building: ../src/calculos.c
+ 
+Building target: NicolasBasso_TP01
+Invoking: GCC C Linker
+gcc  -o "NicolasBasso_TP01"  ./src/NicolasBasso_TP01.o ./src/calculos.o   
+Finished building target: NicolasBasso_TP01
+ 
+20:49:25 **** Incremental Build of configuration Debug for project NicolasBasso_TP01 ****
+make all 
+make: No se hace nada para 'all'.
